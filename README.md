@@ -25,7 +25,15 @@
 
 
 4. 한글 설치
-
+- sudo apt-get update
+- sudo apt-get install fcitx-hangul
+- m-config -n fcitx
+- reboot
+- laugauage (동영상확인)
+-  keyboard input method system 항목을 fcitx로 변경
+-  우상단 키보드모양에서 figure - "+" 버튼 - hangul 검색
+- Input Method Configuration의 Global Config 탭(tab)을 클릭한다.
+- Trigger Input Method의 왼쪽 버튼을 마우스 클릭한다음 "한영키"를 누르기.
 
 
 ```
