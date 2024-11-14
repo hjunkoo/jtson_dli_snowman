@@ -58,8 +58,10 @@ jetson-stats-4.2.3 가 써진 걸 확인.
 ex)
 dli@dli-desktop:~/USB-Camra$ ls
 
-face-detect-usb.py  LICENSE  README.md  usb-camera-gst.py  usb-camera-simple.py     
+face-detect-usb.py  LICENSE  README.md  usb-camera-gst.py  usb-camera-simple.py    
+
 윗 줄 중 하나를 끌고 온다.
+
 dli@dli-desktop:~/USB-Camera$ python3 usb-camera-gst.py
 
 결과 사진
