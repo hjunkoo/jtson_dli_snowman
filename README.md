@@ -37,3 +37,31 @@
 
 
 ```
+2번째 수업
+
+5. 버전확인
+- sudo apt install python3-pip
+- do you want to continue ? Y
+- sudo -H pip3 install -U jetson-stats
+jetson-stats-4.2.3 가 써진 걸 확인.
+
+6. 온도체크 및 쿨링
+- jtop 으로 온도체크 / 만약 높다면 쿨링팬 장착
+- sudo sh -c 'echo 128 > /sys/devices/pwm-fan/target_pwm'   <<<< 해당코드로 인해 10도 정도 떨어지기도 함
+
+7. 카메라
+- ls /dev/vi*  <<<<<제슨이 카메라를 인식하는지 알 수 있는 코드
+- git clone https://github.com/jetsonhacks/USB-Camera.git
+- 만약 usb로 카메라를 외부에서 연결했다면 dli@dli-desktop:~$ cd USB-Camera
+- 만약 내부 장착 카메라일 경우 dli@dli-desktop:~$ cd CSI-Camera
+ex)
+dli@dli-desktop:~/USB-Camra$ ls
+
+face-detect-usb.py  LICENSE  README.md  usb-camera-gst.py  usb-camera-simple.py     
+윗 줄 중 하나를 끌고 온다.
+dli@dli-desktop:~/USB-Camera$ python3 usb-camera-gst.py
+
+결과 사진
+
+
+
