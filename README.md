@@ -56,15 +56,56 @@ jetson-stats-4.2.3 가 써진 걸 확인.
 - 만약 usb로 카메라를 외부에서 연결했다면 dli@dli-desktop:~$ cd USB-Camera
 - 만약 내부 장착 카메라일 경우 dli@dli-desktop:~$ cd CSI-Camera
 ex)
+입력코드
 dli@dli-desktop:~/USB-Camra$ ls
-
+결과
 face-detect-usb.py  LICENSE  README.md  usb-camera-gst.py  usb-camera-simple.py    
 
 윗 줄 중 하나를 끌고 온다.
-
 dli@dli-desktop:~/USB-Camera$ python3 usb-camera-gst.py
 
 결과 사진
 
+
+8. Docker 및 swap 설치
+- dli@dli-desktop:~$ ls   >>> 확인
+- dli@dli-desktop:~$ mkdir -p ~/nvdli-data >>>>교육과정에 필요한 dir 추가하기
+- dli@dli-desktop:~$ ls    >>> 추가되었는지 확인하기
+- dli@dli-desktop:~$#!/bin/bash
+- sudo docker run --runtime nvidia -it --rm --network host \
+    --memory=500M --memory-swap=4G \
+    --volume ~/nvdli-data:/nvdli-nano/data \
+    --volume /tmp/argus_socket:/tmp/argus_socket \
+    --device /dev/video0 \
+    nvcr.io/nvidia/dli/dli-nano-ai:v2.0.2-r32.7.1kr
+
+  >>>>>> 우리 조의 경우 이미 SD카드 속에 docker와 swap이 된 상태였으므로 바로 결과가 나옴.
+결과 :
+0be277f6cdcf: Pull complete
+561a3bf4f244: Pull complete
+2a5d5ea0506f: Pull complete
+ed5b8317fa2e: Pull complete
+Digest: sha256:87d580feed4a9670dfe343cf352239065ff9c7789cfa3a3b36adf828b7e50ac0
+Status: Downloaded newer image for nvcr.io/nvidia/dli/dli-nano-ai:v2.0.2-r32.6.1kr allow 10 sec for JupyterLab to start @ http://192.168.55.1:8888 (password dlinano)c932e62bbab: Waiting
+JupterLab logging location:  /var/log/jupyter.log  (inside the container)
+--------------------------------------------------------------
+
+9. classification
+- 컴퓨터 웹브라우저를 열고 주소창에 192.168.55.1:8888  을 입력.
+- 주피터에 있는 코드 실행
+ (세부과정)
+- 카메라 종류에 맞게 import 시키기
+- 데이터 수집도구 위젯 만들기
+- 뉴럴네트워크 정의, 레이어 조정
+- 실시간 실행위젯 설정
+- 트레이너 정의 및 제어
+- 대화형 위젯 만들고 표시
+- 
+- *아래 과정이 중요*
+카테고리를 thumbs_up으로 설정 -> 카메라로 엄지를 위로 올린 상태를 찍으면서 add -> count를 30이 될 때까지 진행 (여기서 다양한 각도와 위치에서 촬영하는 것이 중요)
+-> 카테고리를 Thumbs_down으로 설정 후 엄지를 아래로 둔 상태로 add -> count를 30이 될 때까지 진행 -> epochs 10 으로 설정 후 train
+- 결과확인
+  카메라에 엄지를 위로 올렸을 때 Thumbs_up 이 1.0 이 되며 Thumbs_down이 0이 되면 best
+  반대로도 되는지 확인
 
 
