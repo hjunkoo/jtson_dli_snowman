@@ -87,7 +87,7 @@ dli@dli-desktop:~/USB-Camera$ python3 usb-camera-gst.py
 9. classification
 - 컴퓨터 웹브라우저를 열고 주소창에 192.168.55.1:8888  을 입력.
 - 주피터에 있는 코드 실행
- (세부과정)
+- (세부과정)
 - 카메라 종류에 맞게 import 시키기
 - 데이터 수집도구 위젯 만들기
 - 뉴럴네트워크 정의, 레이어 조정
