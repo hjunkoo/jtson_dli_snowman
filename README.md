@@ -80,14 +80,8 @@ dli@dli-desktop:~/USB-Camera$ python3 usb-camera-gst.py
     nvcr.io/nvidia/dli/dli-nano-ai:v2.0.2-r32.7.1kr
 
   >>>>>> 우리 조의 경우 이미 SD카드 속에 docker와 swap이 된 상태였으므로 바로 결과가 나옴.
-결과 :
-0be277f6cdcf: Pull complete
-561a3bf4f244: Pull complete
-2a5d5ea0506f: Pull complete
-ed5b8317fa2e: Pull complete
-Digest: sha256:87d580feed4a9670dfe343cf352239065ff9c7789cfa3a3b36adf828b7e50ac0
-Status: Downloaded newer image for nvcr.io/nvidia/dli/dli-nano-ai:v2.0.2-r32.6.1kr allow 10 sec for JupyterLab to start @ http://192.168.55.1:8888 (password dlinano)c932e62bbab: Waiting
-JupterLab logging location:  /var/log/jupyter.log  (inside the container)
+
+
 --------------------------------------------------------------
 
 9. classification
