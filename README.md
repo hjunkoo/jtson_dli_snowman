@@ -100,9 +100,9 @@ dli@dli-desktop:~/USB-Camera$ python3 usb-camera-gst.py
 
 2. classification
 - 컴퓨터 웹브라우저를 열고 주소창에 192.168.55.1:8888  을 입력.
-- 주피터에 있는 코드 실행
-- (세부과정)
-- 카메라 종류에 맞게 import 시키기
+
+- #아래는 주피터 속 코드 설명#
+- 카메라 종류에 맞게 import 시키기 **(우리 조의 경우 CSI로는 오류가 발생하여 USB로 진행)**
 - 데이터 수집도구 위젯 만들기
 - 뉴럴네트워크 정의, 레이어 조정
 - 실시간 실행위젯 설정
@@ -112,8 +112,12 @@ dli@dli-desktop:~/USB-Camera$ python3 usb-camera-gst.py
 - **아래 과정이 중요**
 - 카테고리를 thumbs_up으로 설정 -> 카메라로 엄지를 위로 올린 상태를 찍으면서 add -> count를 30이 될 때까지 진행 (여기서 다양한 각도와 위치에서 촬영하는 것이 중요)
 -> 카테고리를 Thumbs_down으로 설정 후 엄지를 아래로 둔 상태로 add -> count를 30이 될 때까지 진행 -> epochs 10 으로 설정 후 train
-- 결과확인 : 
+- 결과 확인 : 
   카메라에 엄지를 위로 올렸을 때 Thumbs_up 이 1.0 이 되며 Thumbs_down이 0이 되면 best
   반대로도 되는지 확인
+- 결과 사진
+  ![image](https://github.com/user-attachments/assets/daad1bd7-c84e-488b-8562-612c77509710)
+  ![image](https://github.com/user-attachments/assets/75cf9265-0645-4162-b087-eba0c8ef2330)
+
 
 
