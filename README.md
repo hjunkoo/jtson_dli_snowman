@@ -62,6 +62,7 @@ jetson-stats-4.2.3 가 써진 걸 확인.
 - jtop 으로 온도체크 / **만약 온도가 높다면??? ** 쿨링팬 장착
 - sudo sh -c 'echo 128 > /sys/devices/pwm-fan/target_pwm'   <<<< 해당코드로 인해 10도 정도 떨어지기도 함
 
+
 3. 카메라
 - Terminal 열어주기
 - ls /dev/vi*  <<<<<젯슨이 카메라를 인식하는지 알 수 있는 코드
@@ -70,7 +71,7 @@ jetson-stats-4.2.3 가 써진 걸 확인.
 - 만약 내부 장착 카메라일 경우 -------> dli@dli-desktop:~$ cd CSI-Camera
 - ex) 입력코드
 dli@dli-desktop:~/USB-Camra$ ls
-- 결과
+- 결과 : 
 face-detect-usb.py  LICENSE  README.md  usb-camera-gst.py  usb-camera-simple.py    
 
 - 윗 줄 중 하나를 끌고 온다.
@@ -79,6 +80,7 @@ dli@dli-desktop:~/USB-Camera$ python3 usb-camera-gst.py
 - 카메라가 작동하기 시작할 것.
 
 
+**3번째 수업**
 8. Docker 및 swap 설치
 - dli@dli-desktop:~$ ls   >>> 확인
 - dli@dli-desktop:~$ mkdir -p ~/nvdli-data >>>>교육과정에 필요한 dir 추가하기
