@@ -95,8 +95,8 @@ dli@dli-desktop:~/USB-Camera$ python3 usb-camera-gst.py
 - 트레이너 정의 및 제어
 - 대화형 위젯 만들고 표시
 - 
-- *아래 과정이 중요*
-카테고리를 thumbs_up으로 설정 -> 카메라로 엄지를 위로 올린 상태를 찍으면서 add -> count를 30이 될 때까지 진행 (여기서 다양한 각도와 위치에서 촬영하는 것이 중요)
+- **아래 과정이 중요**
+- 카테고리를 thumbs_up으로 설정 -> 카메라로 엄지를 위로 올린 상태를 찍으면서 add -> count를 30이 될 때까지 진행 (여기서 다양한 각도와 위치에서 촬영하는 것이 중요)
 -> 카테고리를 Thumbs_down으로 설정 후 엄지를 아래로 둔 상태로 add -> count를 30이 될 때까지 진행 -> epochs 10 으로 설정 후 train
 - 결과확인 : 
   카메라에 엄지를 위로 올렸을 때 Thumbs_up 이 1.0 이 되며 Thumbs_down이 0이 되면 best
