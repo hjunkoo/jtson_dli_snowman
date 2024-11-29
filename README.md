@@ -66,8 +66,8 @@ jetson-stats-4.2.3 가 써진 걸 확인.
 - Terminal 열어주기
 - ls /dev/vi*  <<<<<젯슨이 카메라를 인식하는지 알 수 있는 코드
 - git clone https://github.com/jetsonhacks/USB-Camera.git
-- 만약 usb로 카메라를 외부에서 연결했다면 dli@dli-desktop:~$ cd USB-Camera
-- 만약 내부 장착 카메라일 경우 dli@dli-desktop:~$ cd CSI-Camera
+- 만약 usb로 카메라를 외부에서 연결했다면 -----> dli@dli-desktop:~$ cd USB-Camera
+- 만약 내부 장착 카메라일 경우 -------> dli@dli-desktop:~$ cd CSI-Camera
 - ex) 입력코드
 dli@dli-desktop:~/USB-Camra$ ls
 - 결과
