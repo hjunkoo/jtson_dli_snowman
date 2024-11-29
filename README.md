@@ -39,7 +39,10 @@
 - Trigger Input Method의 왼쪽 버튼을 마우스 클릭한다음 "한영키"를 누르기.
   ![image](https://github.com/user-attachments/assets/b44aeabb-f0ac-4de5-b978-5a98c83a54df)
 
-- 잘 됐는지 확인 작업:  입력이 한글로 될 때 우상단에 태극문양이 나오는 것을 확인할 수 있을것.
+
+
+
+- **잘 됐는지 확인 작업:  입력이 한글로 될 때 우상단에 태극문양이 나오는 것을 확인할 수 있을것.**
 
 
 
