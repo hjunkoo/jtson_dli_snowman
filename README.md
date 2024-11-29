@@ -68,16 +68,15 @@ jetson-stats-4.2.3 가 써진 걸 확인.
 - git clone https://github.com/jetsonhacks/USB-Camera.git
 - 만약 usb로 카메라를 외부에서 연결했다면 dli@dli-desktop:~$ cd USB-Camera
 - 만약 내부 장착 카메라일 경우 dli@dli-desktop:~$ cd CSI-Camera
-- ex)
-입력코드
+- ex) 입력코드
 dli@dli-desktop:~/USB-Camra$ ls
-결과
+- 결과
 face-detect-usb.py  LICENSE  README.md  usb-camera-gst.py  usb-camera-simple.py    
 
-윗 줄 중 하나를 끌고 온다.
+- 윗 줄 중 하나를 끌고 온다.
 dli@dli-desktop:~/USB-Camera$ python3 usb-camera-gst.py
 
-결과 사진
+- 카메라가 작동하기 시작할 것.
 
 
 8. Docker 및 swap 설치
