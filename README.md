@@ -17,23 +17,26 @@
 -  와이파이 : aifrenz / 비밀번호 : aifrenz1
 -  지도 : 서울
 -  name과 password 설정 (우리 조 name: smowman / password : #3515# )
--  continue - continue - continue
-  여기에 캡쳐사진 넣기
+-  continue - continue - continue (즉, 기본값 그대로 3번 연속 continue 클릭)
 - next - next - done 누르기
-  캡쳐
-- 
 
+6. 한글 설치
+- sudo apt-get update 입력 후 엔터
+- sudo apt-get install fcitx-hangul 입력 후 엔터
+- m-config -n fcitx 입력 후 엔터 
+- reboot 입력 후 엔터
+- all setting - language support
+-![image](https://github.com/user-attachments/assets/46b4ed6d-27be-4bd3-bf3a-55f5d64a7da3)
+- install
+- ![image](https://github.com/user-attachments/assets/ae4b5c9b-4d69-44af-b62a-c3384c41a072)
+- keyboard input method system 항목을 fcitx로 변경
+- ![image](https://github.com/user-attachments/assets/545d3ede-1aa3-4c6e-9db7-83fe83d1684b)
 
-4. 한글 설치
-- sudo apt-get update
-- sudo apt-get install fcitx-hangul
-- m-config -n fcitx
-- reboot
-- laugauage (동영상확인)
--  keyboard input method system 항목을 fcitx로 변경
--  우상단 키보드모양에서 figure - "+" 버튼 - hangul 검색
+- 우상단 키보드모양에서 figure - "+" 버튼 - hangul 검색
 - Input Method Configuration의 Global Config 탭(tab)을 클릭한다.
 - Trigger Input Method의 왼쪽 버튼을 마우스 클릭한다음 "한영키"를 누르기.
+  
+- 잘 됐는지 확인 작업:  입력이 한글로 될 때 우상단에 태극문양이 나오는 것을 확인할 수 있을것.
 
 
 
