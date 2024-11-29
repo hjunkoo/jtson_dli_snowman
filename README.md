@@ -82,7 +82,7 @@ dli@dli-desktop:~/USB-Camera$ python3 usb-camera-gst.py
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **3번째 수업**
-8. Docker 및 swap 설치
+1. Docker 및 swap 설치
 - dli@dli-desktop:~$ ls   >>> 확인
 - dli@dli-desktop:~$ mkdir -p ~/nvdli-data >>>>교육과정에 필요한 dir 추가하기
 - dli@dli-desktop:~$ ls    >>> 추가되었는지 확인하기
@@ -98,7 +98,7 @@ dli@dli-desktop:~/USB-Camera$ python3 usb-camera-gst.py
 
 
 
-9. classification
+2. classification
 - 컴퓨터 웹브라우저를 열고 주소창에 192.168.55.1:8888  을 입력.
 - 주피터에 있는 코드 실행
 - (세부과정)
