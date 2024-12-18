@@ -32,12 +32,9 @@
 - keyboard input method system 항목을 fcitx로 변경
   ![image](https://github.com/user-attachments/assets/545d3ede-1aa3-4c6e-9db7-83fe83d1684b)
 - 우상단 키보드모양에서 figure - "+" 버튼 
-  ![image](https://github.com/user-attachments/assets/ace5c8a2-8343-4eb3-bbc6-f56f9adbfb1e)
 - Only Show Current Language 체크해제 - hangul 검색
-  ![image](https://github.com/user-attachments/assets/928df151-be25-4a6e-9ca6-6372827345d1)
 - Input Method Configuration의 Global Config 탭(tab)을 클릭한다.
 - Trigger Input Method의 왼쪽 버튼을 마우스 클릭한다음 "한영키"를 누르기.
-  ![image](https://github.com/user-attachments/assets/b44aeabb-f0ac-4de5-b978-5a98c83a54df)
 
 
 
